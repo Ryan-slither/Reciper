@@ -31,7 +31,6 @@ function Nav() {
         <Link className="NavImgLink" to="/">
           <img className="NavImg" src="reciper_icon.svg" alt="Reciper Icon" />
         </Link>
-        <div>{location.pathname}</div>
         {location.pathname !== "/" || (
           <div className="NavButtonContainer">
             <Link to="signup">
