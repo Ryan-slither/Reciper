@@ -12,6 +12,10 @@
 - Each recipe has a green button that redirects you the recipes website
 - In your recipe book, you can click recipes to delete them and search through them at the top
 
+# Demo
+
+https://github.com/user-attachments/assets/1b961421-c07e-4720-bd0d-6416b974fa2f
+
 # Credits
 
 - **Edamam** Recipe Search API
