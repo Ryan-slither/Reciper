@@ -1,8 +1,18 @@
-# React + Vite
+# Reciper - Recipe Finder and Management Website!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Frontend Developed Using React and Vite
+- Backend Developed Using Node and Express
+- PostgresSQL for the Database
 
-Currently, two official plugins are available:
+# How to use
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create an account and login to your recipe dashboard
+- From there, you can search recipes from the Edamam API at the top
+- Once they appear, you can click them to add them to your recipe book on the right
+- Each recipe has a green button that redirects you the recipes website
+- In your recipe book, you can click recipes to delete them and search through them at the top
+
+# Credits
+
+- **Edamam** Recipe Search API
+- API used for recipe fetching https://developer.edamam.com/edamam-docs-recipe-api

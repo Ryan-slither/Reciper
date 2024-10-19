@@ -6,7 +6,6 @@ import dotenv from "dotenv";
 import bcrypt from "bcrypt";
 import axios from "axios";
 import { query, validationResult } from "express-validator";
-import data from "../sample.json" assert { type: "json" };
 
 dotenv.config({ path: "./.env" });
 
