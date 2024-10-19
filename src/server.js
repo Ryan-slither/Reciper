@@ -176,6 +176,7 @@ app.get("/dashboard/search", async (request, response) => {
   let bookRecipeName = request.query.book_recipe_name;
   let minIngredients = parseInt(request.query.book_min_ingredients);
   let maxIngredients = parseInt(request.query.book_max_ingredients);
+  const userId = parseInt(request.query.user_id);
   console.log(request.query);
   try {
     if (!minIngredients) {
@@ -190,8 +191,8 @@ app.get("/dashboard/search", async (request, response) => {
       bookRecipeName = String.raw`%${bookRecipeName}%`;
     }
     const result = await db.query(
-      "SELECT * FROM recipes WHERE recipe_name ILIKE $1 AND recipe_ingredients_amount >= $2 AND recipe_ingredients_amount <= $3",
-      [bookRecipeName, minIngredients, maxIngredients]
+      "SELECT * FROM recipes WHERE recipe_name ILIKE $1 AND recipe_ingredients_amount >= $2 AND recipe_ingredients_amount <= $3 AND user_id = $4",
+      [bookRecipeName, minIngredients, maxIngredients, userId]
     );
     console.log(result.rows);
     result.rows.forEach((row) => {

@@ -24,12 +24,9 @@ function Dashboard() {
     const storedIsLogged = localStorage.getItem("isLogged");
     const storedUserId = parseInt(localStorage.getItem("user_id"));
     if (storedIsLogged) {
-      console.log(storedIsLogged);
-      console.log(storedIsLogged === "true");
       storedIsLogged === "true" ? setIsLogged(true) : setIsLogged(false);
     }
     if (storedUserId) {
-      console.log(storedUserId);
       storedUserId === -1 ? setUserId(-1) : setUserId(storedUserId);
     }
     if (!isLogged && userId !== -1) {
@@ -41,7 +38,6 @@ function Dashboard() {
         })
         .then((response) => {
           setBookRecipes(response.data);
-          console.log(response.data);
         })
         .catch((err) => {
           console.error(err);
@@ -81,7 +77,6 @@ function Dashboard() {
               return [...prev, credentials];
             });
           }
-          console.log(bookRecipes);
           console.log(response);
         })
         .catch((err) => {
@@ -91,7 +86,6 @@ function Dashboard() {
   }
 
   function deleteRecipe(title, ingredientCount, url) {
-    console.log(title, ingredientCount, url);
     const credentials = {
       recipe_name: title,
       recipe_ingredients_amount: ingredientCount,
@@ -138,7 +132,6 @@ function Dashboard() {
         []
       )
       .then((response) => {
-        console.log(response.data);
         setRecipes(response.data);
       })
       .catch((err) => {
@@ -151,6 +144,7 @@ function Dashboard() {
       book_recipe_name: bookRecipeName,
       book_min_ingredients: bookMinIngredients,
       book_max_ingredients: bookMaxIngredients,
+      user_id: userId,
     };
     axios
       .get(
@@ -160,7 +154,6 @@ function Dashboard() {
         []
       )
       .then((response) => {
-        console.log(response.data);
         setBookRecipes(response.data);
       })
       .catch((err) => {

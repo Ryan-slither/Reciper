@@ -36,7 +36,6 @@ function Login() {
       )
       .then((response) => {
         if (!response.data.errors) {
-          console.log(response);
           setEmail("");
           setPassword("");
           setIsLogged(true);

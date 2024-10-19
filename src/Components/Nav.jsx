@@ -15,12 +15,9 @@ function Nav() {
     const storedIsLogged = localStorage.getItem("isLogged");
     const storedUserId = parseInt(localStorage.getItem("user_id"));
     if (storedIsLogged) {
-      console.log(storedIsLogged);
-      console.log(storedIsLogged === "true");
       storedIsLogged === "true" ? setIsLogged(true) : setIsLogged(false);
     }
     if (storedUserId) {
-      console.log(storedUserId);
       storedUserId === -1 ? setUserId(-1) : setUserId(storedUserId);
     }
   });
