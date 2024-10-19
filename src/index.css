@@ -1,0 +1,21 @@
+html {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  --s: 150px; /* control the size */
+  background: linear-gradient(135deg, #0000 18.75%, #ffffff 0 31.25%, #0000 0),
+    repeating-linear-gradient(45deg, #ffffff -6.25% 6.25%, #f4f4f466 0 18.75%);
+  background-size: var(--s) var(--s);
+}
+
+#root {
+  height: 100%;
+}

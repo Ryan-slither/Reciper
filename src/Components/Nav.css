@@ -1,0 +1,46 @@
+.Nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  background-color: #018749;
+  height: 8vh;
+  padding-left: 1vw;
+}
+
+.NavImg {
+  align-self: flex-start;
+  height: 100%;
+}
+
+.NavImgLink {
+  height: 100%;
+}
+
+.NavImg:hover {
+  cursor: pointer;
+}
+
+.NavButtonContainer {
+  display: flex;
+  gap: 1vw;
+  margin-left: auto;
+  margin-right: 4vw;
+  justify-content: flex-end;
+}
+
+.NavButton {
+  color: whitesmoke;
+  background-color: #018749;
+  border: none;
+  border-radius: 20px;
+  font-size: large;
+  font-weight: bolder;
+  width: 10vw;
+  height: 3vw;
+}
+
+.NavButton:hover {
+  background-color: #02b360;
+  cursor: pointer;
+}

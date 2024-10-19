@@ -1,0 +1,77 @@
+.DashboardContainer {
+  display: flex;
+  margin: 1% 2.5vw 0 2.5vw;
+  flex-direction: row;
+  justify-content: center;
+  width: 95vw;
+  gap: 1vw;
+  height: 77%;
+}
+
+.DashboardHeaderContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 1% 0% 0% 3%;
+  gap: 29%;
+  color: #00934e;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.RecipeHolder {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.BookHolder {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.DashboardSearch {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-right: auto;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.DashboardRecipes {
+  background-color: whitesmoke;
+  width: 100%;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.RecipeSearchContainer {
+  display: flex;
+  height: 15%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0 2% 0 2%;
+  border-radius: 10px;
+  gap: 2%;
+  font-weight: bold;
+  color: #006a39;
+}
+
+.SearchButton {
+  padding: 1% 1% 1% 1%;
+  margin: 1% 1% 2% 1%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: medium;
+  color: whitesmoke;
+  background-color: #006a39;
+  font-weight: bold;
+  width: 15%;
+  height: 30%;
+}
+
+.SearchButton:hover {
+  background-color: #00934e;
+}

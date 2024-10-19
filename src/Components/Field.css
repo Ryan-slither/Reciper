@@ -1,0 +1,16 @@
+.LoginHeader {
+  font-size: 3vh;
+  font-weight: bolder;
+}
+
+.LoginLength {
+  float: right;
+}
+
+.LoginInput {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: medium;
+}
