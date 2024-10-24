@@ -101,16 +101,16 @@ function Dashboard() {
       )
       .then((response) => {
         console.log(response);
-        setBookRecipes(
-          bookRecipes.filter(
-            (recipe) =>
-              recipe.recipe_name != credentials.recipe_name &&
-              recipe.recipe_ingredients_amount !=
-                credentials.recipe_ingredients_amount &&
-              recipe.recipe_url != credentials.recipe_url &&
-              recipe.user_id == credentials.user_id
-          )
-        );
+        axios
+          .get(`${import.meta.env.VITE_API_URL}/dashboard`, {
+            params: { id: userId },
+          })
+          .then((response) => {
+            setBookRecipes(response.data);
+          })
+          .catch((err) => {
+            console.error(err);
+          });
       })
       .catch((err) => {
         console.error(err);
